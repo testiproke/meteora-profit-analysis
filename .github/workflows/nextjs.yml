@@ -56,7 +56,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
       - run: bun run build
         env: 
-           HELIUS_RPC_URL: ${{ secrets.HELIUS_RPC_URL}}
+           HELIUS_RPC_URL: ${{ secrets.NEXT_PUBLIC_HELIUS_RPC_URL}}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
